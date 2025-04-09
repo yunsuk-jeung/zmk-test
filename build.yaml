@@ -17,3 +17,5 @@ include:
     shield: pla_nck_left
   - board: seeeduino_xiao_ble
     shield: pla_nck_right
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
