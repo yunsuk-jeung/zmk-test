@@ -72,12 +72,30 @@ name: name##_macro {                      \
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default_ {
             bindings = <
-&kp Q        &kp W        &kp E         &kp R              &kp T      &kp CAPSLOCK    &kp F18        &kp Y              &kp U          &kp I         &kp O        &kp P
-&HRM LGUI A  &HRM LALT S  &HRM LCTRL D  &HRM LEFT_SHIFT F  &kp G      &trans          &trans         &kp H              &HRM LSHIFT J  &HRM LCTRL K  &HRM LALT L  &HRM LCMD SEMI
-&kp Z        &kp X        &kp C         &kp V              &kp B      &trans          &trans         &kp N              &kp M          &kp COMMA     &kp DOT      &kp FSLH
-&trans       &trans       &trans        &trans             &kp SPACE  &HMLT 4 TAB     &HMLT 4 ENTER  &HMLT 4 BACKSPACE  &trans         &trans        &trans       &trans
+&kp ESC   &kp Q   &kp W   &kp E   &kp R   &kp T        &kp Y          &kp U   &kp I      &kp O    &kp P     &kp BSPC
+&kp TAB   &kp A   &kp S   &kp D   &kp F   &kp G        &kp H          &kp J   &kp K      &kp L    &kp SEMI  &kp APOS
+&kp CAPS  &kp Z   &kp X   &kp C   &kp V   &kp B        &kp N          &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
+&mo 2     &trans  &trans  &trans  &trans  &kp SPACE    &HMLT 6 ENTER  &trans  &trans     &trans   &trans    &mo 2
+            >;
+        };
+
+        num {
+            bindings = <
+&trans  &trans  &kp N9  &kp N8  &kp N7  &trans    &trans    &trans    &trans  &trans     &trans  &trans
+&trans  &trans  &kp N6  &kp N5  &kp N4  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans  &trans  &kp N3  &kp N2  &kp N1  &trans    &trans    &trans    &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp N0    &trans    &trans    &trans  &trans     &trans  &trans
+            >;
+        };
+
+        danger {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &bootloader    &bootloader  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans       &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans       &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans       &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -108,12 +126,12 @@ name: name##_macro {                      \
             >;
         };
 
-        layer_4 {
+        test_layer {
             bindings = <
-&bootloader  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bootloader
-&trans       &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp Q        &kp W        &kp E         &kp R              &kp T      &kp CAPSLOCK    &kp F18        &kp Y              &kp U          &kp I         &kp O        &kp P
+&HRM LGUI A  &HRM LALT S  &HRM LCTRL D  &HRM LEFT_SHIFT F  &kp G      &trans          &trans         &kp H              &HRM LSHIFT J  &HRM LCTRL K  &HRM LALT L  &HRM LCMD SEMI
+&kp Z        &kp X        &kp C         &kp V              &kp B      &trans          &trans         &kp N              &kp M          &kp COMMA     &kp DOT      &kp FSLH
+&trans       &trans       &trans        &trans             &kp SPACE  &HMLT 0 TAB     &HMLT 0 ENTER  &HMLT 0 BACKSPACE  &trans         &trans        &trans       &trans
             >;
         };
     };
@@ -124,8 +142,8 @@ name: name##_macro {                      \
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <3 4>;
+            then-layer = <5>;
         };
     };
 };
