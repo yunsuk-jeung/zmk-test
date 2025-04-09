@@ -77,7 +77,7 @@ name: name##_macro {                      \
 &kp ESC   &kp Q   &kp W   &kp E   &kp R   &kp T        &kp Y          &kp U   &kp I      &kp O    &kp P     &kp BSPC
 &kp TAB   &kp A   &kp S   &kp D   &kp F   &kp G        &kp H          &kp J   &kp K      &kp L    &kp SEMI  &kp APOS
 &kp CAPS  &kp Z   &kp X   &kp C   &kp V   &kp B        &kp N          &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-&mo 2     &trans  &trans  &trans  &trans  &kp SPACE    &HMLT 6 ENTER  &trans  &trans     &trans   &trans    &mo 2
+&mo 2     &trans  &trans  &trans  &trans  &kp SPACE    &HMLT 6 ENTER  &trans  &trans     &trans   &kp F18   &mo 2
             >;
         };
 
