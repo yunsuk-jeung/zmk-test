@@ -33,10 +33,10 @@ name: name##_macro {                      \
 
         default_layer {
             bindings = <
-&kp ESC        &kp Q      &kp W     &kp E     &kp R         &kp T        &kp Y      &kp U         &kp I      &kp O     &kp P     &kp BSPC
-&mt HYPER TAB  &kp A      &kp S     &kp D     &kp F         &kp G        &kp H      &kp J         &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT      &kp Z      &kp X     &kp C     &kp V         &kp B        &kp N      &kp M         &kp COMMA  &kp DOT   &kp FSLH  &kp RET
-&kp A          &kp LCTRL  &kp LALT  &kp LGUI  &kp NUMBER_1  &kp SPACE    &kp SPACE  &kp NUMBER_2  &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT
+&kp ESC        &kp Q      &kp W     &kp E     &kp R         &kp T    &kp Y  &kp U         &kp I      &kp O     &kp P     &kp BSPC
+&mt HYPER TAB  &kp A      &kp S     &kp D     &kp F         &kp G    &kp H  &kp J         &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT      &kp Z      &kp X     &kp C     &kp V         &kp B    &kp N  &kp M         &kp COMMA  &kp DOT   &kp FSLH  &kp RET
+&kp A          &kp LCTRL  &kp LALT  &kp LGUI  &kp NUMBER_1  &mo 4    &mo 4  &kp NUMBER_2  &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT
             >;
         };
 
@@ -64,6 +64,15 @@ name: name##_macro {                      \
 &none        &kp LC(LS(LA(A)))  &kp LC(LS(LA(S)))  &kp LC(LS(LA(D)))  &kp LC(LS(LA(F)))  &kp LC(LS(LA(G)))    &kp LC(LS(LA(H)))  &kp LC(LS(LA(J)))  &kp LC(LS(LA(K)))      &kp LC(LS(LA(L)))    &kp LC(LS(LA(SEMI)))  &kp LC(LS(LA(SQT)))
 &none        &kp LC(LS(LA(Z)))  &kp LC(LS(LA(X)))  &kp LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &kp LC(LS(LA(B)))    &kp LC(LS(LA(N)))  &kp LC(LS(LA(M)))  &kp LC(LS(LA(COMMA)))  &kp LC(LS(LA(DOT)))  &kp LC(LS(LA(FSLH)))  &kp LC(LS(LA(RET)))
 &bootloader  &kp LCTRL          &kp LALT           &kp LGUI           &trans             &trans               &trans             &trans             &none                  &none                &none                 &bootloader
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&sys_reset  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &sys_reset
+&trans      &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
