@@ -98,15 +98,39 @@ name: name##_macro {                      \
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        sp {
+            bindings = <&kp SPACE>;
+            key-positions = <16 15>;
+        };
+
+        et {
+            bindings = <&kp ENTER>;
+            key-positions = <19 20>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <14 15>;
+        };
+
+        bs {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <20 21>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_ {
             bindings = <
-&kp ESC        &kp Q          &HMLT2 4 W   &HMLT2 3 E    &HMLT2 6 R     &kp T            &kp Y               &HMLT2 2 U     &HMLT2 1 I    &HMLT2 5 O   &kp P           &kp BSPC
-&kp TAB        &HRM LSHIFT A  &HRM LALT S  &HRM LCTRL D  &HRM LSHIFT F  &kp G            &kp H               &HRM LSHIFT J  &HRM LCTRL K  &HRM LALT L  &HRM LGUI SEMI  &kp ENTER
-&kp CAPSLOCK   &kp Z          &kp X        &kp C         &kp V          &kp B            &kp N               &kp M          &kp COMMA     &kp PERIOD   &kp FSLH        &kp BSLH
-&HMLT 7 TILDE  &trans         &trans       &trans        &trans         &HMLT 3 SPACE    &HMLT 1 UNDERSCORE  &trans         &trans        &trans       &trans          &HMLT 7 F18
+&kp ESC        &kp Q        &HMLT2 4 W   &HMLT2 3 E    &HMLT2 6 R     &kp T            &kp Y               &HMLT2 2 U     &HMLT2 1 I    &HMLT2 5 O   &kp P           &kp BSPC
+&kp TAB        &HRM LGUI A  &HRM LALT S  &HRM LCTRL D  &HRM LSHIFT F  &kp G            &kp H               &HRM LSHIFT J  &HRM LCTRL K  &HRM LALT L  &HRM LGUI SEMI  &kp ENTER
+&kp CAPSLOCK   &kp Z        &kp X        &kp C         &kp V          &kp B            &kp N               &kp M          &kp COMMA     &kp PERIOD   &kp FSLH        &kp BSLH
+&HMLT 7 TILDE  &trans       &trans       &trans        &trans         &HMLT 3 SPACE    &HMLT 1 UNDERSCORE  &trans         &trans        &trans       &trans          &HMLT 7 F18
             >;
         };
 
@@ -159,7 +183,7 @@ name: name##_macro {                      \
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp DEL               &kp BSPC               &kp LBKT        &kp RBKT         &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &go_assign            &left_arrow            &equal_arrow    &right_arrow     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &go_assign            &left_arrow            &right_arrow    &equal_arrow     &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                &trans                 &trans          &trans           &trans
             >;
         };
