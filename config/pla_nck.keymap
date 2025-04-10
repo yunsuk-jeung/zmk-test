@@ -120,6 +120,11 @@ name: name##_macro {                      \
             bindings = <&kp BACKSPACE>;
             key-positions = <20 21>;
         };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <2 3>;
+        };
     };
 
     keymap {
