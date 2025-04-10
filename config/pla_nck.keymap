@@ -109,6 +109,7 @@ name: name##_macro {                      \
         et {
             bindings = <&kp ENTER>;
             key-positions = <19 20>;
+            timeout-ms = <75>;
         };
 
         tab {
@@ -119,6 +120,7 @@ name: name##_macro {                      \
         bs {
             bindings = <&kp BACKSPACE>;
             key-positions = <20 21>;
+            timeout-ms = <75>;
         };
 
         esc {
