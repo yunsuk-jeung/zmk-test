@@ -152,10 +152,10 @@ name: name##_macro {                      \
 
         sym {
             bindings = <
-&trans  &trans  &kp LEFT_PARENTHESIS  &kp ASTERISK  &kp AMPERSAND    &kp UNDERSCORE           &trans    &trans    &trans  &trans     &trans    &trans
-&trans  &trans  &kp CARET             &kp PERCENT   &kp DOLLAR       &kp PLUS                 &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp LGUI  &trans
-&trans  &trans  &kp HASH              &kp AT_SIGN   &kp EXCLAMATION  &kp PLUS                 &trans    &trans    &trans  &trans     &trans    &trans
-&trans  &trans  &trans                &trans        &trans           &kp RIGHT_PARENTHESIS    &trans    &trans    &trans  &trans     &trans    &trans
+&trans  &trans             &kp LEFT_PARENTHESIS  &kp ASTERISK  &kp AMPERSAND    &kp UNDERSCORE           &trans    &trans    &trans  &trans     &trans    &trans
+&trans  &kp DOUBLE_QUOTES  &kp CARET             &kp PERCENT   &kp DOLLAR       &kp PLUS                 &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp LGUI  &trans
+&trans  &kp TILDE          &kp HASH              &kp AT_SIGN   &kp EXCLAMATION  &kp PLUS                 &trans    &trans    &trans  &trans     &trans    &trans
+&trans  &trans             &trans                &trans        &trans           &kp RIGHT_PARENTHESIS    &trans    &trans    &trans  &trans     &trans    &trans
             >;
         };
 
