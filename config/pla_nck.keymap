@@ -112,6 +112,11 @@ name: name##_macro {                      \
             bindings = <&kp ESCAPE>;
             key-positions = <2 3>;
         };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <8 9>;
+        };
     };
 
     keymap {
