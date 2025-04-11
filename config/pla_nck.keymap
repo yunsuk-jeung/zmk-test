@@ -141,10 +141,10 @@ name: name##_macro {                      \
 
         default_ {
             bindings = <
-&kp ESC        &kp Q        &HMLT2 6 W   &HMLT2 3 E    &HMLT2 4 R     &kp T            &kp Y               &HMLT2 2 U     &HMLT2 1 I    &HMLT2 5 O   &kp P           &kp BSPC
-&kp TAB        &HRM LGUI A  &HRM LALT S  &HRM LCTRL D  &HRM LSHIFT F  &kp G            &kp H               &HRM LSHIFT J  &HRM LCTRL K  &HRM LALT L  &HRM LGUI SEMI  &kp ENTER
-&kp CAPSLOCK   &kp Z        &kp X        &kp C         &kp V          &kp B            &kp N               &kp M          &kp COMMA     &kp PERIOD   &kp FSLH        &kp BSLH
-&HMLT 7 TILDE  &trans       &trans       &trans        &trans         &HMLT 3 SPACE    &HMLT 1 UNDERSCORE  &trans         &trans        &trans       &trans          &HMLT 7 F18
+&kp ESC        &kp Q        &HMLT2 6 W   &HMLT2 3 E    &HMLT2 4 R     &kp T            &kp Y          &HMLT2 2 U     &HMLT2 1 I    &HMLT2 5 O   &kp P           &kp BSPC
+&kp TAB        &HRM LGUI A  &HRM LALT S  &HRM LCTRL D  &HRM LSHIFT F  &kp G            &kp H          &HRM LSHIFT J  &HRM LCTRL K  &HRM LALT L  &HRM LGUI SEMI  &kp UNDERSCORE
+&kp CAPSLOCK   &kp Z        &kp X        &kp C         &kp V          &kp B            &kp N          &kp M          &kp COMMA     &kp PERIOD   &kp FSLH        &kp BSLH
+&HMLT 7 TILDE  &trans       &trans       &trans        &trans         &HMLT 3 SPACE    &HMLT 1 ENTER  &trans         &trans        &trans       &trans          &HMLT 7 F18
             >;
         };
 
