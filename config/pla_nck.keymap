@@ -53,6 +53,13 @@ name: name##_macro {                      \
             bindings = <&kp LESS_THAN &kp MINUS &kp SPACE>;
             label = "LEFT_ARROW";
         };
+
+        not_equal: not_equal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EXCLAMATION &kp EQUAL>;
+            label = "NOT_EQUAL";
+        };
     };
 };
 
@@ -188,10 +195,10 @@ name: name##_macro {                      \
 
         code {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp DEL               &kp BSPC               &kp LBKT        &kp RBKT         &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &go_assign            &left_arrow            &right_arrow    &equal_arrow     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                &trans                 &trans          &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &kp DEL               &kp BSPC               &kp LBKT        &kp RBKT         &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &not_equal  &go_assign            &left_arrow            &right_arrow    &equal_arrow     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans                &trans                 &trans          &trans           &trans
             >;
         };
 
