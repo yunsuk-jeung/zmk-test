@@ -149,7 +149,7 @@ name: name##_macro {                      \
             bindings = <
 &trans  &trans             &kp LEFT_PARENTHESIS  &kp ASTERISK  &kp AMPERSAND    &kp PLUS                 &trans    &trans    &trans  &trans     &trans    &trans
 &trans  &kp DOUBLE_QUOTES  &kp CARET             &kp PERCENT   &kp DOLLAR       &kp MINUS                &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp LGUI  &trans
-&trans  &kp TILDE          &kp HASH              &kp AT_SIGN   &kp EXCLAMATION  &kp PLUS                 &trans    &trans    &trans  &trans     &trans    &trans
+&trans  &kp TILDE          &kp HASH              &kp AT_SIGN   &kp EXCLAMATION  &kp EQUAL                &trans    &trans    &trans  &trans     &trans    &trans
 &trans  &trans             &trans                &trans        &trans           &kp RIGHT_PARENTHESIS    &trans    &trans    &trans  &trans     &trans    &trans
             >;
         };
