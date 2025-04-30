@@ -129,7 +129,7 @@ name: name##_macro {                      \
 
         default_ {
             bindings = <
-&kp CAPSLOCK   &kp Q        &kp W        &HMLT2 6 E    &HMLT2 3 R     &kp T            &kp Y          &HMLT2 1 U     &HMLT2 2 I    &kp O        &kp P           &kp UNDERSCORE
+&kp CAPSLOCK   &kp Q        &kp W        &HMLT2 6 E    &HMLT2 3 R     &kp T            &kp Y          &HMLT2 2 U     &HMLT2 1 I    &kp O        &kp P           &kp UNDERSCORE
 &kp TAB        &HRM LGUI A  &HRM LALT S  &HRM LCTRL D  &HRM LSHIFT F  &kp G            &kp H          &HRM LSHIFT J  &HRM LCTRL K  &HRM LALT L  &HRM LGUI SEMI  &kp BACKSPACE
 &kp ESCAPE     &kp Z        &kp X        &kp C         &kp V          &kp B            &kp N          &kp M          &kp COMMA     &kp PERIOD   &kp FSLH        &kp BACKSLASH
 &HMLT 7 TILDE  &trans       &trans       &trans        &HMLT 4 TAB    &HMLT 3 SPACE    &HMLT 1 ENTER  &HMLT 5 DEL    &trans        &trans       &trans          &HMLT 7 F18
@@ -148,7 +148,7 @@ name: name##_macro {                      \
         sym {
             bindings = <
 &trans  &trans             &kp LEFT_PARENTHESIS  &kp ASTERISK  &kp AMPERSAND    &kp PLUS                 &trans    &trans    &trans  &trans     &trans    &trans
-&trans  &kp DOUBLE_QUOTES  &kp CARET             &kp PERCENT   &kp DOLLAR       &kp UNDERSCORE           &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp LGUI  &trans
+&trans  &kp DOUBLE_QUOTES  &kp CARET             &kp PERCENT   &kp DOLLAR       &kp MINUS                &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp LGUI  &trans
 &trans  &kp TILDE          &kp HASH              &kp AT_SIGN   &kp EXCLAMATION  &kp PLUS                 &trans    &trans    &trans  &trans     &trans    &trans
 &trans  &trans             &trans                &trans        &trans           &kp RIGHT_PARENTHESIS    &trans    &trans    &trans  &trans     &trans    &trans
             >;
