@@ -129,8 +129,8 @@ name: name##_macro {                      \
 
         default_ {
             bindings = <
-&kp CAPSLOCK   &kp Q        &kp W              &HMLT2 6 E         &HMLT2 3 R             &kp T            &kp Y          &HMLT2 2 U     &HMLT2 1 I    &HMLT2 5 O    &kp P           &kp UNDERSCORE
-&kp TAB        &HRM LGUI A  &HRM LALT S        &HRM LCTRL D       &HRM LSHIFT F          &kp G            &kp H          &HRM LSHIFT J  &HRM LCTRL K  &HRM LALT L   &HRM LGUI SEMI  &kp BACKSPACE
+&kp CAPSLOCK   &kp Q        &kp W              &HMLT2 6 E         &HMLT2 3 R             &kp T            &kp Y          &HMLT2 2 U     &HMLT2 1 I    &HMLT2 5 O    &kp P           &kp BACKSPACE
+&kp TAB        &HRM LGUI A  &HRM LALT S        &HRM LCTRL D       &HRM LSHIFT F          &kp G            &kp H          &HRM LSHIFT J  &HRM LCTRL K  &HRM LALT L   &HRM LGUI SEMI  &kp UNDERSCORE
 &kp ESCAPE     &kp Z        &kp X              &kp C              &kp V                  &kp B            &kp N          &kp M          &kp COMMA     &kp PERIOD    &kp FSLH        &kp BACKSLASH
 &HMLT 7 TILDE  &trans       &kp LA(LC(LG(J)))  &kp LA(LC(LG(F)))  &HMLT 4 LG(LC(LA(P)))  &HMLT 3 SPACE    &HMLT 1 ENTER  &kp LEFT       &kp DOWN      &kp UP_ARROW  &kp RIGHT       &HMLT 7 F18
             >;
@@ -138,7 +138,7 @@ name: name##_macro {                      \
 
         num {
             bindings = <
-&kp ASTERISK  &kp PERCENT  &kp N9  &kp N8  &kp N7  &kp PLUS     &trans    &trans                &trans         &trans                     &trans        &trans
+&kp ASTERISK  &kp PERCENT  &kp N9  &kp N8  &kp N7  &kp PLUS     &trans    &trans                &trans         &trans                     &trans        &kp DELETE
 &kp COMMA     &kp SQT      &kp N6  &kp N5  &kp N4  &kp MINUS    &kp LEFT  &HRM LEFT_SHIFT DOWN  &HRM UP LCTRL  &HRM LEFT_ALT RIGHT_ARROW  &kp LEFT_GUI  &trans
 &kp PERIOD    &kp GRAVE    &kp N3  &kp N2  &kp N1  &kp EQUAL    &trans    &trans                &trans         &trans                     &trans        &trans
 &trans        &trans       &trans  &trans  &trans  &kp N0       &trans    &trans                &trans         &trans                     &trans        &trans
