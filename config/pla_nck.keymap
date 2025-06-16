@@ -156,7 +156,7 @@ name: name##_macro {                      \
 
         nav {
             bindings = <
-&trans     &kp LG(Q)  &trans     &trans     &trans     &trans           &trans     &trans    &trans   &trans     &trans  &trans
+&trans     &kp LG(Q)  &trans     &trans     &trans     &trans           &trans     &trans    &trans   &trans     &trans  &kp DELETE
 &kp LG(F)  &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &kp LG(LS(F))    &kp LEFT   &kp DOWN  &kp UP   &kp RIGHT  &trans  &trans
 &kp LG(A)  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(Z))    &kp PG_UP  &kp HOME  &kp END  &kp PG_DN  &trans  &trans
 &trans     &trans     &trans     &trans     &trans     &trans           &trans     &trans    &trans   &trans     &trans  &trans
@@ -165,7 +165,7 @@ name: name##_macro {                      \
 
         Fn {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp DEL
 &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans
 &trans  &trans    &trans    &trans     &trans     &trans    &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
 &trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans   &trans   &trans   &trans
@@ -183,7 +183,7 @@ name: name##_macro {                      \
 
         code {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp DEL
 &trans  &trans  &trans  &trans  &trans  &trans    &trans      &kp DEL               &kp BSPC               &kp LBKT        &kp RBKT         &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &not_equal  &go_assign            &left_arrow            &right_arrow    &equal_arrow     &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans                &trans                 &trans          &trans           &trans
