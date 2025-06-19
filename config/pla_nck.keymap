@@ -111,11 +111,13 @@ name: name##_macro {                      \
         esc {
             bindings = <&kp ESCAPE>;
             key-positions = <2 3>;
+            timeout-ms = <60>;
         };
 
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <8 9>;
+            timeout-ms = <30>;
         };
 
         enter_combo {
