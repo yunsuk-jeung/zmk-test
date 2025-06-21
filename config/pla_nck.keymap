@@ -117,7 +117,7 @@ name: name##_macro {                      \
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <8 9>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
         };
 
         enter_combo {
